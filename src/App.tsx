@@ -83,7 +83,7 @@ const ScrambleText = ({ text }: { text: string }) => {
 const Navbar = () => (
   <nav className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-2xl border-b border-black/5">
     <div className="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
-      <div className="text-2xl font-black tracking-tighter text-primary font-headline">SonicCanvas</div>
+      <div className="text-2xl font-black tracking-tighter text-primary font-headline italic">Plug·R</div>
       <div className="hidden md:flex items-center gap-8 font-bold">
         <a className="text-neutral-600 hover:text-primary transition-colors" href="#">Artistes</a>
         <a className="text-neutral-600 hover:text-primary transition-colors" href="#">Recruteurs</a>
@@ -424,7 +424,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
             <div className="lg:col-span-4">
-              <div className="text-3xl font-black tracking-tighter text-primary font-headline mb-6">SonicCanvas</div>
+              <div className="text-3xl font-black tracking-tighter text-primary font-headline mb-6 italic">Plug·R</div>
               <p className="text-on-surface-variant font-medium leading-relaxed max-w-xs">
                 La plateforme ultime pour les talents indépendants et les programmateurs visionnaires qui souhaitent réinventer l'industrie musicale.
               </p>
@@ -457,7 +457,7 @@ export default function App() {
                   </a>
                 ))}
               </div>
-              <div className="text-neutral-400 font-bold text-sm mb-2">© 2024 SonicCanvas. Curating the digital stage.</div>
+              <div className="text-neutral-400 font-bold text-sm mb-2">© 2024 Plug·R. Curating the digital stage.</div>
             </div>
           </div>
         </div>
