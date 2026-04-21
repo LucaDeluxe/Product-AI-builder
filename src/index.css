@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Epilogue", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  
+  --color-primary: #6b1ef3;
+  --color-primary-fixed: #ad8eff;
+  --color-secondary: #b60051;
+  --color-secondary-fixed: #ffc2cd;
+  --color-surface: #ffffff;
+  --color-background: #f5f6f7;
+  --color-on-surface: #2c2f30;
+  --color-on-surface-variant: #595c5d;
+}
+
+@layer base {
+  body {
+    @apply font-body text-on-surface bg-background antialiased;
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+.mesh-gradient-glow {
+  background: radial-gradient(at 0% 0%, var(--color-primary-fixed) 0%, transparent 50%),
+              radial-gradient(at 100% 100%, var(--color-secondary-fixed) 0%, transparent 50%);
+  filter: blur(80px);
+  opacity: 0.15;
+}
+
+.artist-card-image {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
